@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		1E2543480071AFC8DB6EC811 /* Pods_DevLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C87495867BEF2434296F210 /* Pods_DevLove.framework */; };
 		FD51DEEE1F0C5F0C00D4A4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51DEED1F0C5F0C00D4A4B9 /* AppDelegate.swift */; };
-		FD51DEF01F0C5F0C00D4A4B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51DEEF1F0C5F0C00D4A4B9 /* ViewController.swift */; };
+		FD51DEF01F0C5F0C00D4A4B9 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51DEEF1F0C5F0C00D4A4B9 /* SigninVC.swift */; };
 		FD51DEF31F0C5F0C00D4A4B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51DEF11F0C5F0C00D4A4B9 /* Main.storyboard */; };
 		FD51DEF51F0C5F0C00D4A4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD51DEF41F0C5F0C00D4A4B9 /* Assets.xcassets */; };
 		FD51DEF81F0C5F0C00D4A4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51DEF61F0C5F0C00D4A4B9 /* LaunchScreen.storyboard */; };
+		FDE4F9AC1F0C638600DAF135 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDE4F9AB1F0C638600DAF135 /* GoogleService-Info.plist */; };
+		FDE4F9B11F0CE1DD00DAF135 /* f.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE4F9B01F0CE1DD00DAF135 /* f.png */; };
+		FDE4F9B31F0CE67100DAF135 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B21F0CE67100DAF135 /* RoundedButton.swift */; };
+		FDE4F9B51F0CE75900DAF135 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B41F0CE75900DAF135 /* FancyImageView.swift */; };
+		FDE4F9B71F0CEC4300DAF135 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B61F0CEC4300DAF135 /* User.swift */; };
+		FDE4F9B91F0CFD8E00DAF135 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B81F0CFD8E00DAF135 /* NewsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +27,17 @@
 		F67BA1245D846177ACC66DC1 /* Pods-DevLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevLove.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevLove/Pods-DevLove.release.xcconfig"; sourceTree = "<group>"; };
 		FD51DEEA1F0C5F0C00D4A4B9 /* DevLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD51DEED1F0C5F0C00D4A4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD51DEEF1F0C5F0C00D4A4B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD51DEEF1F0C5F0C00D4A4B9 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		FD51DEF21F0C5F0C00D4A4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD51DEF41F0C5F0C00D4A4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD51DEF71F0C5F0C00D4A4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD51DEF91F0C5F0C00D4A4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE4F9AB1F0C638600DAF135 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FDE4F9B01F0CE1DD00DAF135 /* f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f.png; sourceTree = "<group>"; };
+		FDE4F9B21F0CE67100DAF135 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		FDE4F9B41F0CE75900DAF135 /* FancyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
+		FDE4F9B61F0CEC4300DAF135 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FDE4F9B81F0CFD8E00DAF135 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +90,44 @@
 		FD51DEEC1F0C5F0C00D4A4B9 /* DevLove */ = {
 			isa = PBXGroup;
 			children = (
+				FDE4F9AF1F0C654B00DAF135 /* Model */,
+				FDE4F9AE1F0C654300DAF135 /* View */,
+				FDE4F9AD1F0C653500DAF135 /* Controller */,
+				FDE4F9AB1F0C638600DAF135 /* GoogleService-Info.plist */,
 				FD51DEED1F0C5F0C00D4A4B9 /* AppDelegate.swift */,
-				FD51DEEF1F0C5F0C00D4A4B9 /* ViewController.swift */,
 				FD51DEF11F0C5F0C00D4A4B9 /* Main.storyboard */,
 				FD51DEF41F0C5F0C00D4A4B9 /* Assets.xcassets */,
+				FDE4F9B01F0CE1DD00DAF135 /* f.png */,
 				FD51DEF61F0C5F0C00D4A4B9 /* LaunchScreen.storyboard */,
 				FD51DEF91F0C5F0C00D4A4B9 /* Info.plist */,
 			);
 			path = DevLove;
+			sourceTree = "<group>";
+		};
+		FDE4F9AD1F0C653500DAF135 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD51DEEF1F0C5F0C00D4A4B9 /* SigninVC.swift */,
+				FDE4F9B81F0CFD8E00DAF135 /* NewsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FDE4F9AE1F0C654300DAF135 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDE4F9B21F0CE67100DAF135 /* RoundedButton.swift */,
+				FDE4F9B41F0CE75900DAF135 /* FancyImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FDE4F9AF1F0C654B00DAF135 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDE4F9B61F0CEC4300DAF135 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD51DEF81F0C5F0C00D4A4B9 /* LaunchScreen.storyboard in Resources */,
+				FDE4F9AC1F0C638600DAF135 /* GoogleService-Info.plist in Resources */,
 				FD51DEF51F0C5F0C00D4A4B9 /* Assets.xcassets in Resources */,
+				FDE4F9B11F0CE1DD00DAF135 /* f.png in Resources */,
 				FD51DEF31F0C5F0C00D4A4B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD51DEF01F0C5F0C00D4A4B9 /* ViewController.swift in Sources */,
+				FD51DEF01F0C5F0C00D4A4B9 /* SigninVC.swift in Sources */,
+				FDE4F9B31F0CE67100DAF135 /* RoundedButton.swift in Sources */,
+				FDE4F9B51F0CE75900DAF135 /* FancyImageView.swift in Sources */,
+				FDE4F9B71F0CEC4300DAF135 /* User.swift in Sources */,
 				FD51DEEE1F0C5F0C00D4A4B9 /* AppDelegate.swift in Sources */,
+				FDE4F9B91F0CFD8E00DAF135 /* NewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +429,7 @@
 				FD51DEFE1F0C5F0C00D4A4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
