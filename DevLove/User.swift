@@ -31,6 +31,7 @@ class User {
     var _lastName: String!
     var _publicName: String!
     var _city: String!
+    var _uid: String!
     
     var email: String {
         if _email == nil {
@@ -72,6 +73,13 @@ class User {
             _city = ""
         }
         return _city
+    }
+    
+    var uid: String {
+        if _uid == nil {
+            _uid = ""
+        }
+        return _uid
     }
     
     

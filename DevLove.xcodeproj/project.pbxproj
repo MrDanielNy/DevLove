@@ -13,12 +13,17 @@
 		FD51DEF31F0C5F0C00D4A4B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51DEF11F0C5F0C00D4A4B9 /* Main.storyboard */; };
 		FD51DEF51F0C5F0C00D4A4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD51DEF41F0C5F0C00D4A4B9 /* Assets.xcassets */; };
 		FD51DEF81F0C5F0C00D4A4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51DEF61F0C5F0C00D4A4B9 /* LaunchScreen.storyboard */; };
+		FDDA9E991F0D530C009E5E60 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA9E981F0D530C009E5E60 /* NewsFeedCell.swift */; };
+		FDDA9E9B1F0D61B9009E5E60 /* FancyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA9E9A1F0D61B9009E5E60 /* FancyLabel.swift */; };
+		FDDA9E9D1F0D7E42009E5E60 /* FancierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA9E9C1F0D7E42009E5E60 /* FancierView.swift */; };
 		FDE4F9AC1F0C638600DAF135 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDE4F9AB1F0C638600DAF135 /* GoogleService-Info.plist */; };
 		FDE4F9B11F0CE1DD00DAF135 /* f.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE4F9B01F0CE1DD00DAF135 /* f.png */; };
 		FDE4F9B31F0CE67100DAF135 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B21F0CE67100DAF135 /* RoundedButton.swift */; };
 		FDE4F9B51F0CE75900DAF135 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B41F0CE75900DAF135 /* FancyImageView.swift */; };
 		FDE4F9B71F0CEC4300DAF135 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B61F0CEC4300DAF135 /* User.swift */; };
 		FDE4F9B91F0CFD8E00DAF135 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9B81F0CFD8E00DAF135 /* NewsVC.swift */; };
+		FDE4F9BB1F0D008100DAF135 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9BA1F0D008100DAF135 /* Constants.swift */; };
+		FDE4F9BD1F0D0E9400DAF135 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4F9BC1F0D0E9400DAF135 /* NewsFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +37,17 @@
 		FD51DEF41F0C5F0C00D4A4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD51DEF71F0C5F0C00D4A4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD51DEF91F0C5F0C00D4A4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDA9E981F0D530C009E5E60 /* NewsFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
+		FDDA9E9A1F0D61B9009E5E60 /* FancyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyLabel.swift; sourceTree = "<group>"; };
+		FDDA9E9C1F0D7E42009E5E60 /* FancierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancierView.swift; sourceTree = "<group>"; };
 		FDE4F9AB1F0C638600DAF135 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FDE4F9B01F0CE1DD00DAF135 /* f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f.png; sourceTree = "<group>"; };
 		FDE4F9B21F0CE67100DAF135 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		FDE4F9B41F0CE75900DAF135 /* FancyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
 		FDE4F9B61F0CEC4300DAF135 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FDE4F9B81F0CFD8E00DAF135 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		FDE4F9BA1F0D008100DAF135 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FDE4F9BC1F0D0E9400DAF135 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 				FDE4F9B01F0CE1DD00DAF135 /* f.png */,
 				FD51DEF61F0C5F0C00D4A4B9 /* LaunchScreen.storyboard */,
 				FD51DEF91F0C5F0C00D4A4B9 /* Info.plist */,
+				FDE4F9BA1F0D008100DAF135 /* Constants.swift */,
 			);
 			path = DevLove;
 			sourceTree = "<group>";
@@ -118,6 +129,9 @@
 			children = (
 				FDE4F9B21F0CE67100DAF135 /* RoundedButton.swift */,
 				FDE4F9B41F0CE75900DAF135 /* FancyImageView.swift */,
+				FDDA9E981F0D530C009E5E60 /* NewsFeedCell.swift */,
+				FDDA9E9A1F0D61B9009E5E60 /* FancyLabel.swift */,
+				FDDA9E9C1F0D7E42009E5E60 /* FancierView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -126,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				FDE4F9B61F0CEC4300DAF135 /* User.swift */,
+				FDE4F9BC1F0D0E9400DAF135 /* NewsFeed.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -258,8 +273,13 @@
 			files = (
 				FD51DEF01F0C5F0C00D4A4B9 /* SigninVC.swift in Sources */,
 				FDE4F9B31F0CE67100DAF135 /* RoundedButton.swift in Sources */,
+				FDE4F9BD1F0D0E9400DAF135 /* NewsFeed.swift in Sources */,
 				FDE4F9B51F0CE75900DAF135 /* FancyImageView.swift in Sources */,
 				FDE4F9B71F0CEC4300DAF135 /* User.swift in Sources */,
+				FDDA9E991F0D530C009E5E60 /* NewsFeedCell.swift in Sources */,
+				FDDA9E9D1F0D7E42009E5E60 /* FancierView.swift in Sources */,
+				FDDA9E9B1F0D61B9009E5E60 /* FancyLabel.swift in Sources */,
+				FDE4F9BB1F0D008100DAF135 /* Constants.swift in Sources */,
 				FD51DEEE1F0C5F0C00D4A4B9 /* AppDelegate.swift in Sources */,
 				FDE4F9B91F0CFD8E00DAF135 /* NewsVC.swift in Sources */,
 			);

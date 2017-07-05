@@ -12,5 +12,6 @@ target 'DevLove' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'SwiftKeychainWrapper'
+  pod 'Alamofire'
 
 end

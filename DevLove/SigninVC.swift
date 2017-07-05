@@ -13,17 +13,23 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SigninVC: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: "goToNewsFeed", sender: nil)
+        }
+        
     }
 
 
@@ -53,12 +59,16 @@ class SigninVC: UIViewController {
                 if error != nil {
                     print("signinUserTapped: Error \(String(describing: error))")
                 }
+                self.completeSignin(uid: user!.uid)
             })
-            performSegue(withIdentifier: "goToNewsFeed", sender: nil)
+//            performSegue(withIdentifier: "goToNewsFeed", sender: nil)
         }
     }
     
-    
+    func completeSignin(uid: String) {
+        KeychainWrapper.standard.set(uid, forKey: KEY_UID)
+        performSegue(withIdentifier: "goToNewsFeed", sender: nil)
+    }
 
 }
 
