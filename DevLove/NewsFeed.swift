@@ -13,6 +13,7 @@ class NewsFeed {
     private var _title: String!
     private var _description: String!
     private var _published: String!
+    private var _webUrl: String!
     
     var title: String {
         if _title == nil {
@@ -36,26 +37,34 @@ class NewsFeed {
         return _published
     }
     
-    init(newsDict: Dictionary<String, AnyObject>) {
-        //        _title = title
-        //        _description = description
-        //        _published = published
-        
-        
-                if let newsTitle = newsDict["title"] {
-                    self._title = newsTitle.capitalized
-                    //   print(newsTitle)
-                    
-                }
-                if let newsDescription = newsDict["description"] {
-                    self._description = newsDescription.capitalized
-                    //   print(newsDescription)
-                    
-                }
-                if let published = newsDict["publishedAt"] {
-                    self._published = published as? String
-                    //    print(published)
-                }
+    var webUrl: String {
+        if _webUrl == nil {
+            _webUrl = ""
         }
+        return _webUrl
     }
+    
+    init(newsDict: Dictionary<String, AnyObject>) {
+        if let newsTitle = newsDict["title"] {
+            self._title = newsTitle.capitalized
+            //   print(newsTitle)
+            
+        }
+        if let newsDescription = newsDict["description"] {
+            self._description = newsDescription.capitalized
+            //   print(newsDescription)
+            
+        }
+        if let published = newsDict["publishedAt"] {
+            self._published = published as? String
+            //    print(published)
+        }
+        
+        if let webUrl = newsDict["url"] {
+            self._webUrl = webUrl as? String
+         //   print(self._webUrl)
+        }
+        
+    }
+}
 

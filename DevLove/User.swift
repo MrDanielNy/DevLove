@@ -25,13 +25,13 @@
 import Foundation
 
 class User {
-    var _email: String!
-    var _password: String!
-    var _firstName: String!
-    var _lastName: String!
-    var _publicName: String!
-    var _city: String!
-    var _uid: String!
+    private var _email: String!
+    private var _password: String!
+    private var _firstName: String!
+    private var _lastName: String!
+    private var _publicName: String!
+    private var _city: String!
+    private var _uid: String!
     
     var email: String {
         if _email == nil {

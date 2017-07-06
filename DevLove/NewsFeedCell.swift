@@ -27,7 +27,11 @@ class NewsFeedCell: UITableViewCell {
     func configureCell(newsFeed: NewsFeed) {
         self.newsTitle.text = newsFeed.title
         self.newsDescription.text = newsFeed.description
-        self.newsDate.text = newsFeed.published
+        var publ = newsFeed.published
+        if let rng = publ.range(of: "T") {
+            publ.removeSubrange(rng.lowerBound..<publ.endIndex)
+        }
+        self.newsDate.text = publ //newsFeed.published
     }
 
 }

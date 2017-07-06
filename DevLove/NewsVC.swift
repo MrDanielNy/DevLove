@@ -32,6 +32,8 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        downloadedNewsFeed = []
+        
         self.downloadNews {
             print(self.downloadedNewsFeed.count)
             self.tableView.reloadData()
@@ -92,4 +94,17 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return downloadedNewsFeed.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newsSelected = downloadedNewsFeed[indexPath.row]
+        print(newsSelected.webUrl)
+        performSegue(withIdentifier: "goToNewsWebVC", sender: newsSelected)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? NewsWebVC {
+            if let newsObject = sender as? NewsFeed {
+                destination.newsFeedObject = newsObject
+            }
+        }
+    }
 }
