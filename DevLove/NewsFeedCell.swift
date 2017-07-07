@@ -13,6 +13,7 @@ class NewsFeedCell: UITableViewCell {
     @IBOutlet weak var newsTitle: UILabel!
     @IBOutlet weak var newsDescription: UILabel!
     @IBOutlet weak var newsDate: UILabel!
+    @IBOutlet weak var newsImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,11 +28,16 @@ class NewsFeedCell: UITableViewCell {
     func configureCell(newsFeed: NewsFeed) {
         self.newsTitle.text = newsFeed.title
         self.newsDescription.text = newsFeed.description
+        
+        //Remove the extra Timestamp on published key returned on JSON before setting the value on lbl
         var publ = newsFeed.published
         if let rng = publ.range(of: "T") {
             publ.removeSubrange(rng.lowerBound..<publ.endIndex)
         }
-        self.newsDate.text = publ //newsFeed.published
+        self.newsDate.text = publ
+        
+        //Set image
+        self.newsImage.image = newsFeed.newsImage
     }
 
 }

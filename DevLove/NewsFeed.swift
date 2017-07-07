@@ -8,12 +8,16 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
+
 
 class NewsFeed {
     private var _title: String!
     private var _description: String!
     private var _published: String!
     private var _webUrl: String!
+    private var _imageUrl: String!
+    private var _newsImage: UIImage!
     
     var title: String {
         if _title == nil {
@@ -44,25 +48,43 @@ class NewsFeed {
         return _webUrl
     }
     
+    var imageUrl: String {
+        if _imageUrl == nil {
+            _imageUrl = ""
+        }
+        return _imageUrl
+    }
+    
+    var newsImage: UIImage {
+        get {
+            if _newsImage == nil {
+                _newsImage = UIImage(named: "No-Image-Avail")
+            }
+            return _newsImage
+        } set {
+            _newsImage = newValue
+        }
+    }
+    
     init(newsDict: Dictionary<String, AnyObject>) {
         if let newsTitle = newsDict["title"] {
             self._title = newsTitle.capitalized
-            //   print(newsTitle)
             
         }
         if let newsDescription = newsDict["description"] {
             self._description = newsDescription.capitalized
-            //   print(newsDescription)
             
         }
         if let published = newsDict["publishedAt"] {
             self._published = published as? String
-            //    print(published)
         }
         
         if let webUrl = newsDict["url"] {
             self._webUrl = webUrl as? String
-         //   print(self._webUrl)
+        }
+        
+        if let imageUrl = newsDict["urlToImage"] {
+            self._imageUrl = imageUrl as? String
         }
         
     }

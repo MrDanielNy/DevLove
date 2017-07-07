@@ -29,22 +29,31 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         tableView.delegate = self
         
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
         downloadedNewsFeed = []
         
         self.downloadNews {
             print(self.downloadedNewsFeed.count)
-            self.tableView.reloadData()
+            for i in 0..<self.downloadedNewsFeed.count {
+                self.downloadImage(newsObject: self.downloadedNewsFeed[i]) {
+                    print("image downloaded?")
+                    self.tableView.reloadData()
+                }
+            }
         }
+        
+    }
+    
+    func downloadImage(newsObject: NewsFeed, completed: @escaping DownloadComplete) {
+        Alamofire.request(newsObject.imageUrl).responseImage(completionHandler: { (response) in
+            newsObject.newsImage = response.value!
+            completed()
+        })
     }
 
     func downloadNews(completed: @escaping DownloadComplete) {
         Alamofire.request("https://newsapi.org/v1/articles?source=recode&sortBy=top&apiKey=81457607b989422ea14c5bf7a5acc24b").responseJSON {response in
             print("Alamofire NewsFeed returned: \(response.result)")
             
-            // if let newsJSON = response.result.value {
             if let dict = response.result.value as? Dictionary<String, AnyObject> {
                 
                 if let articles = dict["articles"] as? [Dictionary<String, AnyObject>], articles.count > 0 {

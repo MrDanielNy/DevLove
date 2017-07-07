@@ -13,5 +13,6 @@ target 'DevLove' do
   pod 'FacebookLogin'
   pod 'SwiftKeychainWrapper'
   pod 'Alamofire'
+  pod 'AlamofireImage'
 
 end
